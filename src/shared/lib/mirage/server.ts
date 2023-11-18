@@ -11,7 +11,7 @@ const makeServer = () => {
     },
     routes() {
       this.namespace = "api";
-      this.timing = 300;
+      this.timing = 0;
       this.get("/media", (schema: any) => {
         return schema.media.all().models;
       });

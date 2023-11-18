@@ -13,6 +13,7 @@ export class MediaStore {
     releaseYear: 0,
     rating: 0,
   };
+  isLoading: boolean = false;
 
   constructor() {
     makeObservable(this, {
@@ -20,6 +21,7 @@ export class MediaStore {
       selectedTab: observable,
       textFilter: observable,
       fields: observable,
+      isLoading: observable,
       setSelectedTab: action,
       setTextFilter: action,
       fetchMediaItems: action,
@@ -45,16 +47,20 @@ export class MediaStore {
   };
 
   fetchMediaItems = async () => {
+    this.isLoading = true;
     try {
       httpClient
         .get<MediaItemType[]>("/media")
         .subscribe((data) => (this.mediaItems = data));
     } catch (error) {
       console.error("Error fetching media items:", error);
+    } finally {
+      this.isLoading = false;
     }
   };
 
   createMediaItem = async (payload: Omit<MediaItemType, "id">) => {
+    this.isLoading = true;
     try {
       httpClient
         .post<MediaItemType>("/media", payload)
@@ -72,10 +78,13 @@ export class MediaStore {
         });
     } catch (error) {
       console.error("Error creating media item:", error);
+    } finally {
+      this.isLoading = false;
     }
   };
 
   deleteMediaItem = async (id: number) => {
+    this.isLoading = true;
     try {
       httpClient.delete<boolean>("/media", id).subscribe((response) => {
         if (response === true) {
@@ -84,6 +93,8 @@ export class MediaStore {
       });
     } catch (error) {
       console.error("Error fetching media items:", error);
+    } finally {
+      this.isLoading = false;
     }
   };
 
