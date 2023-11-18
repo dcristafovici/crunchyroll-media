@@ -1,15 +1,10 @@
 export type ApplicationThemeInterface = {
   name: string;
   colors: {
-    primary: {
-      default: string;
-      dark: string;
-      light: string;
-    };
-    white: string;
-    green: string;
-    yellow: string;
-    black: string;
+    primary: string;
+    secondary: string;
+    background: string;
+    text: string;
   };
 };
 

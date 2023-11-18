@@ -87,7 +87,9 @@ const GlobalStyles = createGlobalStyle`
       "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
+    font-size: 16px;
+    color: ${(props) => props.theme.colors.text};
+    background-color: ${(props) => props.theme.colors.background};
   }
 
   code {
