@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FilterBarStyled = styled.div`
+  margin-top: 30px;
   .filter-bar {
     background-color: ${(props) => props.theme.colors.background};
     border: 1px solid ${(props) => props.theme.colors.primary};

@@ -1,5 +1,6 @@
 import React from "react";
+import MediaForm from "../../features/MediaForm";
 
-const CreateMedia: React.FC = () => <h1>Create media</h1>;
+const CreateMedia: React.FC = () => <MediaForm />;
 
 export default CreateMedia;

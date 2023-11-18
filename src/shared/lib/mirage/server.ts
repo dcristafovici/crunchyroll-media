@@ -17,7 +17,8 @@ const makeServer = () => {
       });
       this.post("/media", (schema: any, request) => {
         const attrs = JSON.parse(request.requestBody);
-        return schema.media.create(attrs);
+        const createdMedia = schema.media.create(attrs);
+        return createdMedia.attrs;
       });
       this.patch("/media/:id", (schema: any, request) => {
         let media = JSON.parse(request.requestBody);
