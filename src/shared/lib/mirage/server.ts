@@ -13,21 +13,20 @@ const makeServer = () => {
       this.namespace = "api";
       this.timing = 300;
       this.get("/media", (schema: any) => {
-        console.log(schema);
-        return schema.medias.all(); //
+        return schema.media.all().models;
       });
       this.post("/media", (schema: any, request) => {
         const attrs = JSON.parse(request.requestBody);
-        return schema.medias.create(attrs);
+        return schema.media.create(attrs);
       });
-      this.patch("/media/:id", (schema, request) => {
+      this.patch("/media/:id", (schema: any, request) => {
         let media = JSON.parse(request.requestBody);
-        return schema.db.medias.update(media.id, media);
+        return schema.db.mediums.update(media.id, media);
       });
-      this.delete("/media/:id", (schema, request) => {
+      this.delete("/media/:id", (schema: any, request) => {
         let id = request.params.id;
-        schema.db.medias.find(id).destroy();
-        return { success: true };
+        schema.media.find(id).destroy();
+        return true;
       });
     },
   });

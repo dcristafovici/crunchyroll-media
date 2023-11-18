@@ -18,7 +18,7 @@ export const fixture = [
   {
     id: 3,
     title: "The Witcher 3: Wild Hunt",
-    type: "game",
+    type: "custom",
     genre: "Action RPG",
     releaseYear: 2015,
     rating: 9.8,
@@ -106,7 +106,7 @@ export const fixture = [
   {
     id: 14,
     title: "Friends",
-    type: "tv-show",
+    type: "custom",
     genre: "Comedy",
     releaseYear: 1994,
     rating: 8.5,
@@ -122,7 +122,7 @@ export const fixture = [
   {
     id: 16,
     title: "Forrest Gump",
-    type: "movie",
+    type: "custom",
     genre: "Drama",
     releaseYear: 1994,
     rating: 8.8,
@@ -154,7 +154,7 @@ export const fixture = [
   {
     id: 20,
     title: "Stranger Things 2",
-    type: "tv-show",
+    type: "something",
     genre: "Drama",
     releaseYear: 2017,
     rating: 8.9,
@@ -178,7 +178,7 @@ export const fixture = [
   {
     id: 23,
     title: "The Simpsons",
-    type: "tv-show",
+    type: "custom",
     genre: "Animation",
     releaseYear: 1989,
     rating: 8.7,

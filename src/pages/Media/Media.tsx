@@ -1,13 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MediaStyled } from "./MediaStyled";
+import MediaList from "../../entities/MediaList";
 
 const Media: React.FC = () => {
-  useEffect(() => {
-    fetch("/api/media").then((res) => console.log(res));
-  }, []);
   return (
     <MediaStyled>
-      <h1>media page</h1>
+      <MediaList />
     </MediaStyled>
   );
 };
