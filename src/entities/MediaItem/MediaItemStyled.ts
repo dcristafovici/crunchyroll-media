@@ -33,7 +33,7 @@ export const MediaItemStyled = styled.div`
         margin-left: 10px;
         cursor: pointer;
         border-radius: 5px;
-        transition: background-color 0.3s ease; /* Add a smooth transition effect */
+        transition: background-color 0.3s ease;
 
         font-size: 16px;
         font-weight: bold;

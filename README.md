@@ -2,6 +2,43 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Author's Comments to Reviewers
+
+Unfortunately, being limited in time, I did not complete all the scenarios, and there are also a bunch of improvements needed. Anyway, I tried my best to create a clean project with a scalable architecture using the Feature Slide design. I aimed to design functions as closely as possible to a real project, making them scalable and usable in different places.
+
+### Areas for Improvement with More Time
+
+1. **Form Validation**
+
+   - Enhance the validation process for forms.
+
+2. **Form Handling, Including Reset**
+
+   - Improve the handling of forms, including the reset functionality.
+
+3. **Splitting Async and Non-Async Functions from Store**
+
+   - Separate asynchronous and non-asynchronous functions within the store.
+
+4. **Adding Unit Tests**
+
+   - Implement unit tests to ensure robust code.
+
+5. **Adding Spinner for Loading**
+
+   - Include a spinner component to indicate loading states.
+
+6. **Adding Error Handling Mechanism**
+
+   - Implement a mechanism for handling errors gracefully.
+
+7. **Ensuring Correct Types in Few Places**
+   - Review and correct data types in specific areas.
+
 ## Available Scripts
 
 In the project directory, you can run:

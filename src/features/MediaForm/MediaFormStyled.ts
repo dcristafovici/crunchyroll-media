@@ -39,10 +39,10 @@ export const MediaFormStyled = styled.div`
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    transition: background-color 0.3s ease;
   }
 
   button:hover {
-    background-color: #c0392b; /* Darken the secondary color on hover */
+    background-color: #c0392b;
   }
 `;
