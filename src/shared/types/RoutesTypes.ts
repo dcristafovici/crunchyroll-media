@@ -1,9 +1,9 @@
 export enum ApplicationRoutes {
-  MEDIA_LIST,
+  MEDIA,
   CREATE_MEDIA,
 }
 
 export const ApplicationRoutesPaths: { [key in ApplicationRoutes]: string } = {
-  [ApplicationRoutes.MEDIA_LIST]: "/",
+  [ApplicationRoutes.MEDIA]: "/",
   [ApplicationRoutes.CREATE_MEDIA]: "/create",
 };

@@ -15,9 +15,9 @@ const Header: React.FC = () => (
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
-              to={ApplicationRoutesPaths[ApplicationRoutes.MEDIA_LIST]}
+              to={ApplicationRoutesPaths[ApplicationRoutes.MEDIA]}
             >
-              Media List
+              Media
             </NavLink>
           </li>
           <li>

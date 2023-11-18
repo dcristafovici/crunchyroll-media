@@ -3,14 +3,14 @@ import {
   ApplicationRoutes,
   ApplicationRoutesPaths,
 } from "../types/RoutesTypes";
-import MediaListPage from "./components/MediaListPage";
 import CreateMediaPage from "./components/CreateMediaPage";
 import PageLayout from "../../pages/PageLayout";
+import MediaPage from "./components/MediaPage";
 
 const routes: RouteObject[] = [
   {
-    path: ApplicationRoutesPaths[ApplicationRoutes.MEDIA_LIST],
-    element: <MediaListPage />,
+    path: ApplicationRoutesPaths[ApplicationRoutes.MEDIA],
+    element: <MediaPage />,
   },
   {
     path: ApplicationRoutesPaths[ApplicationRoutes.CREATE_MEDIA],
