@@ -1,11 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Author's Comments to Reviewers
 
 Unfortunately, being limited in time, I did not complete all the scenarios, and there are also a bunch of improvements needed. Anyway, I tried my best to create a clean project with a scalable architecture using the Feature Slide design. I aimed to design functions as closely as possible to a real project, making them scalable and usable in different places.
