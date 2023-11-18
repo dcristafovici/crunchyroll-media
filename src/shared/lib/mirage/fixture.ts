@@ -106,7 +106,7 @@ export const fixture = [
   {
     id: 14,
     title: "Friends",
-    type: "custom",
+    type: "tw-shows",
     genre: "Comedy",
     releaseYear: 1994,
     rating: 8.5,

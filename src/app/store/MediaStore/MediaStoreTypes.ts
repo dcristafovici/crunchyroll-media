@@ -1,4 +1,4 @@
-export const MediaApplicationSupportedGenre = ["movie", "tw-shows", "game"];
+export const MediaApplicationSupportedTypes = ["movie", "tw-shows", "game"];
 
 export interface MediaItemType {
   id: number;

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { MediaItemStyled } from "./MediaItemStyled";
 import { MediaItemProps } from "./MediaItemTypes";
 
 const MediaItem: React.FC<MediaItemProps> = ({ item, onDelete }) => {
+  const [isEditing, setIsEditing] = useState<boolean>(false);
   const { id, title, type, genre, releaseYear, rating } = item;
   return (
     <MediaItemStyled>
